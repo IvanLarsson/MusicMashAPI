@@ -1,5 +1,5 @@
 # Mashup
-Mashup is a REST api that uses Apache Maven to build and keep track of dependencies. Spring boot is used as framework.
+Mashup is a REST api that uses Apache Maven to build and keep track of dependencies. The framework used id Spring boot.
 Mashup is using an N-tier architecture. The different tiers used in this api are:
 - Api layer
     * Here are all the endpoints made. All the GET, POST DELETES
@@ -8,7 +8,8 @@ Mashup is using an N-tier architecture. The different tiers used in this api are
     * Here is all logic made. It gets called by the API layer.
 -  Data access layer
     * This layer is used to access data, it could be MYSQL, MongoDB etc.
-        But in this case it is the external APIs such as MusicBrainz, Wikidata, Wikipedia and Cover Art Archive
+        But in this case it is the external APIs such as MusicBrainz, Wikidata, Wikipedia and Cover Art Archive.
+         And then converting the response into POJOs and then sending it back to the service layer 
 
 The data flow is as such:
 Client -> API Layer -> Service Layer -> Data access Layer -> Service Layer -> API Layer -> Client
