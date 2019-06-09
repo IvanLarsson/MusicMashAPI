@@ -69,8 +69,6 @@ public class MashService {
     }
 
     public void getFromWikidata(){
-        // error handle if res is null
-
         List<MBRelations> l = mbArtist.getRelations().stream()
                 .filter(mbRelations -> mbRelations.getType().equals("wikidata"))
                 .collect(Collectors.toList());

@@ -27,9 +27,6 @@ import java.util.UUID;
 public class GetDataFromExternalAPI {
     private static final ObjectMapper mapper = new ObjectMapper();
 
-
-    // Add headers
-    // What I need: relations, sitelinks, release-grups
     public MBArtist getFromMusicBrainz(UUID mbid) {
         System.out.println("Getting from MusicBrainz");
         final String uri = "http://musicbrainz.org/ws/2/artist/" + mbid + "?&fmt=json&inc=url-rels+release-groups";

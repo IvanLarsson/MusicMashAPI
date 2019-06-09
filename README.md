@@ -57,4 +57,5 @@ Things to do in order make it an official release
 
 Things I would like to have implemented but was unable for whatever reason (mostly time).
 * Unit tests
-* Better or more error handels for the external api calls
+* Better or more error handles for the external api calls
+* Comments in the code to make it more understandable 
